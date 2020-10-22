@@ -1,0 +1,10 @@
+language: cpp
+jobs:
+  include:
+    - name: "macOS Build"
+      os: osx
+      osx_image: xcode11.3
+      script: ./travisMac.sh
+    - name: "Windows Build"
+      os: windows
+      script: ./travisWin.sh
